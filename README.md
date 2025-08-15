@@ -30,24 +30,17 @@ For a full list of command-line arguments, please see the `train.py` script or r
 python train.py --help
 ```
 
-### Evaluation
+### Sampler
 
-The evaluation predecdure is from [Neural Hawkes Process](https://github.com/hongyuanmei/neurawkes) for next event prediction. 
+The sampling predecdure is from [Neural Hawkes Process](https://github.com/hongyuanmei/neurawkes) for next event prediction. 
 
-### Sampling
-
-The `sampler.py` script can be used to generate event sequences from a trained model.
-
-```bash
-python sampler.py --model_path [path_to_your_trained_model] --num_sequences [number_of_sequences_to_generate]
-```
 
 ## Code Structure
 
 * `data_loader.py`: Contains the data loading and preprocessing logic.
 * `model.py`: Defines the architecture of our proposed neural network model.
 * `train.py`: The main script for training the model.
-* `sampler.py`: A script for generating new event sequences from a trained model.
+* `sampler.py`: A script for sampling the next event. 
 
 ## Citation
 
